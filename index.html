@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+  </head>
+  <body>
+    <header>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">menu</span>
+      </button>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="primary-navigation"
+          data-visible="false"
+        >
+          <li><a href=""> Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href=""> Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="avatarbox">
+        <div>
+          <p class="qua"></p>
+          <img src="images/icon-cart.svg" alt="" class="checkcart" />
+        </div>
+        <div>
+          <img src="images/image-avatar.png" alt="" class="avatar" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <picture class="first">
+        <button class="left">
+          <span class="sr-only">slide left</span
+          ><img src="images/icon-previous.svg" alt="" />
+        </button>
+
+        <div class="imageone product"></div>
+        <div class="imagetwo product"></div>
+        <div class="imagethree product"></div>
+        <div class="imagefour product"></div>
+
+        <button class="right">
+          <span class="sr-only">slide right</span
+          ><img src="images/icon-next.svg" alt="" />
+        </button>
+      </picture>
+      <div class="webstyle">
+        <div class="displaypic">
+          <img src="images/image-product-1.jpg" alt="" />
+        </div>
+        <div class="web">
+          <button>
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="thumbone"
+            />
+          </button>
+          <button>
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+              class="thumbtwo"
+            />
+          </button>
+          <button>
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+              class="thumbthree"
+            />
+          </button>
+          <button>
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+              class="thumbfour"
+            />
+          </button>
+        </div>
+
+        <div class="wrapper">
+          <div class="overlay">
+            <button class="leftu">
+              <span class="sr-only">slide left</span
+              ><img src="images/icon-previous.svg" alt="" />
+            </button>
+
+            <button class="rightu">
+              <span class="sr-only">slide right</span
+              ><img src="images/icon-next.svg" alt="" />
+            </button>
+            <img src="images/icon-close.svg" alt="" class="closebox" />
+            <div class="box">
+              <picture class="shrink">
+                <div class="so"><img src="" alt="" class="ss" /></div>
+                <div class="imageonee oo"></div>
+                <div class="imagetwoo oo"></div>
+                <div class="imagethreee oo"></div>
+                <div class="imagefourr oo"></div>
+              </picture>
+
+              <div class="lightbox">
+                <button>
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    alt=""
+                    class="lightone view"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="images/image-product-2-thumbnail.jpg"
+                    alt=""
+                    class="lighttwo view"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="images/image-product-3-thumbnail.jpg"
+                    alt=""
+                    class="lightthree view"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="images/image-product-4-thumbnail.jpg"
+                    alt=""
+                    class="lightfour view"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article>
+        <h1>Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p class="text">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div class="discount">
+            <p class="current">$125.00</p>
+            <p class="age">50%</p>
+          </div>
+
+          <p class="old">$250.00</p>
+        </div>
+        <div class="new">
+          <div class="addremove">
+            <img src="images/icon-minus.svg" alt="" class="minus" />
+            <p class="quantity">0</p>
+            <img src="images/icon-plus.svg" alt="" class="plus" />
+          </div>
+          <button class="addcart">
+            <img src="images/icon-cart.svg" alt="" /> Add to cart
+          </button>
+        </div>
+      </article>
+
+      <aside class="empty">
+        <h5>Cart</h5>
+         <img src="images/icon-close.svg" alt="" class="closecart" />
+        <hr />
+        <p>Your cart is empty</p>
+      </aside>
+
+      <aside class="cartcontents">
+        <h5>Cart</h5>
+          <img src="images/icon-close.svg" alt="" class="closecart" />
+        <hr />
+        <div class="cartcontent">
+          <div class="desc">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="smal"
+            />
+            <div>
+              <p class="name">Autumn limited Edition</p>
+              <p class="total">
+                $125.00 x <span class="productqua"></span>
+                <span class="producttotal"></span>
+              </p>
+            </div>
+          </div>
+          <img src="images/icon-delete.svg" alt="" class="trash" />
+        </div>
+        <button class="checkout">checkout</button>
+      </aside>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ibimina Hart</a>.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
