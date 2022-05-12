@@ -40,7 +40,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/ibimina/ecommerce-product-page-main)
-- Live Site URL: (https://github.io/ibimina/ecommerce-product-page-main/)
+- Live Site URL: (https://ibimina.github.io/ecommerce-product-page-main/)
+
 
 ## My process
 
