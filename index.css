@@ -164,7 +164,7 @@ li a:hover {
   right: 1rem;
   top: 0.8rem;
 }
-picture.first {
+div.first {
   display: block;
   width: 100%;
   position: relative;
@@ -259,7 +259,7 @@ p.text {
   color: hsl(219, 9%, 45%);
   margin-bottom: 1.5rem;
 }
-picture.shrink {
+div.shrink {
   display: none;
 }
 .price {
@@ -536,7 +536,7 @@ div.web {
     margin: 0;
     display: inline-block;
   }
-  picture.shrink {
+  div.shrink {
     display: block;
   }
   .box {
@@ -610,7 +610,7 @@ div.web {
     top: 5rem;
     right: 32rem;
   }
-  picture.first {
+  div.first {
     display: none;
   }
   article {
