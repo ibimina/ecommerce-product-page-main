@@ -267,11 +267,13 @@ picture.shrink {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+   
 }
 .discount {
   display: flex;
   gap: 1rem;
   align-items: center;
+   font-weight: 700;
 }
 .age {
   background-color: hsl(25, 100%, 94%);
@@ -284,6 +286,7 @@ picture.shrink {
 .old {
   text-decoration: line-through;
   color: hsl(220, 14%, 75%);
+
 }
 .addremove {
   display: flex;
@@ -619,6 +622,9 @@ div.web {
   .addremove {
     width: 40%;
     margin-bottom: 0;
+  }
+  .price{
+    display: grid;
   }
   .new {
     display: flex;
