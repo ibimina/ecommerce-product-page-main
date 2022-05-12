@@ -34,7 +34,7 @@ Users should be able to:
 ### Screenshot
 
 ![mobile]((iPhone6_7_8)d.png)
-![desktop]((Webcapture.jpeg)
+![desktop](Webcapture.jpeg)
 
 
 ### Links
