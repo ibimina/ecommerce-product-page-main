@@ -89,6 +89,22 @@ function redoi() {
 redoi();
 ```
 
+I learnt on how to use the filter property to change the colour of a svg element wrapper in an image tag
+
+```css
+.checkoutcartimg {
+  cursor: pointer;
+  filter: invert(100%)sepia(20%)hue-rotate(80deg)saturate(100%)brightness(1000%);
+}
+
+.checkcart {
+  cursor: pointer;
+  filter: invert(100%)sepia(100%)hue-rotate(399deg)saturate(0)brightness(110%);
+}
+.checkcart:hover,.checkcart:active{
+  filter: brightness(10%);
+}
+```
 
 ### Continued development
 Working on Mobile design web page and image slider
