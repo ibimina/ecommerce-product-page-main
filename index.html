@@ -16,11 +16,13 @@
   </head>
   <body>
     <header>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <div class="lo">
+      <button class="mobile-nav-toggle bg" aria-controls="primary-navigation">
         <span class="sr-only" aria-expanded="false">menu</span>
       </button>
       <div class="logo">
         <img src="images/logo.svg" alt="logo" />
+      </div>
       </div>
       <nav>
         <ul
@@ -28,17 +30,17 @@
           class="primary-navigation"
           data-visible="false"
         >
-          <li><a href=""> Collections</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href=""> Women</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#" class="nav-blue"> Collections</a></li>
+          <li><a href="#" class="nav-blue">Men</a></li>
+          <li><a href="#" class="nav-blue"> Women</a></li>
+          <li><a href="#" class="nav-blue">About</a></li>
+          <li><a href="#" class="nav-blue">Contact</a></li>
         </ul>
       </nav>
 
       <div class="avatarbox">
         <div>
-          <p class="qua"></p>
+          <p class="qua white"></p>
           <img src="images/icon-cart.svg" alt="cart image" class="checkcart" />
         </div>
         <div>
@@ -49,21 +51,22 @@
 
     <main>
       <div class="first">
-        <button class="left">
+        <button class="left position">
           <span class="sr-only">slide left</span
           ><img src="images/icon-previous.svg" alt="arrow" />
         </button>
 
-        <div class="imageone product"></div>
-        <div class="imagetwo product"></div>
-        <div class="imagethree product"></div>
-        <div class="imagefour product"></div>
+        <div class="imageone bg product display"></div>
+        <div class="imagetwo bg product display"></div>
+        <div class="imagethree bg product display"></div>
+        <div class="imagefour bg product display"></div>
 
-        <button class="right">
+        <button class="right position display">
           <span class="sr-only">slide right</span
           ><img src="images/icon-next.svg" alt="arrow" />
         </button>
       </div>
+     
       <div class="webstyle">
         <div class="displaypic">
           <img src="images/image-product-1.jpg" alt="product" />
@@ -104,21 +107,21 @@
           </button>
         </div>
 
-        <div class="wrapper">
+        <div class="wrapper display">
           <div class="overlay">
-            <button class="leftu">
-              <span class="sr-only">slide left</span
-              ><img src="images/icon-previous.svg" alt="arrow" />
-            </button>
-
-            <button class="rightu">
-              <span class="sr-only">slide right</span
-              ><img src="images/icon-next.svg" alt="image" />
-            </button>
+           
             <img src="images/icon-close.svg" alt="close image" class="closebox" />
             <div class="box">
+              <button class="leftu position">
+                <span class="sr-only">slide left</span><img src="images/icon-previous.svg" alt="arrow" />
+              </button>
+              
+              <button class="rightu position">
+                <span class="sr-only">slide right</span><img src="images/icon-next.svg" alt="image" />
+              </button>
               <div class="shrink">
-                <div class="so"><img src="" alt="image" class="ss" /></div>
+
+                <div class="so"></div>
                 <div class="imageonee oo"></div>
                 <div class="imagetwoo oo"></div>
                 <div class="imagethreee oo"></div>
@@ -164,9 +167,9 @@
         </div>
       </div>
       <article>
-        <h1>Sneaker Company</h1>
-        <h2>Fall Limited Edition Sneakers</h2>
-        <p class="text">
+        <h1 class="orange margin-btn">Sneaker Company</h1>
+        <h2 class="margin-btn nav-blue">Fall Limited Edition Sneakers</h2>
+        <p class="text margin-btn">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
@@ -174,7 +177,7 @@
         <div class="price">
           <div class="discount">
             <p class="current">$125.00</p>
-            <p class="age">50%</p>
+            <p class="age orange">50%</p>
           </div>
 
           <p class="old">$250.00</p>
@@ -182,46 +185,21 @@
         <div class="new">
           <div class="addremove">
             <img src="images/icon-minus.svg" alt="image" class="minus" />
-            <p class="quantity">0</p>
+            <p class="quantity nav-blue">0</p>
             <img src="images/icon-plus.svg" alt="image" class="plus" />
           </div>
-          <button class="addcart">
+          <button class="addcart white">
             <span class="sr-only">cart icon</span
               > <img src="images/icon-cart.svg" alt="image" class="checkoutcartimg" /> Add to cart
           </button>
         </div>
       </article>
 
-      <aside class="empty">
-        <h5>Cart</h5>
-         <img src="images/icon-close.svg" alt="close cart" class="closecart" />
-        <hr />
-        <p>Your cart is empty</p>
+      <aside class="show-cart empty">
+      
       </aside>
 
-      <aside class="cartcontents">
-        <h5>Cart</h5>
-          <img src="images/icon-close.svg" alt="close image " class="closecart" />
-        <hr />
-        <div class="cartcontent">
-          <div class="desc">
-            <img
-              src="images/image-product-1-thumbnail.jpg"
-              alt="image"
-              class="smal"
-            />
-            <div>
-              <p class="name">Autumn limited Edition</p>
-              <p class="total">
-                $125.00 x <span class="productqua"></span>
-                <span class="producttotal"></span>
-              </p>
-            </div>
-          </div>
-          <img src="images/icon-delete.svg" alt="image" class="trash" />
-        </div>
-        <button class="checkout">checkout</button>
-      </aside>
+    
     </main>
 
     <footer class="attribution">
