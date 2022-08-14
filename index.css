@@ -114,9 +114,9 @@ header {
 /* .log {
   color: hsl(220, 13%, 13%);
 } */
-.nav-blue{
- color: hsl(220, 13%, 13%);
-} 
+.nav-blue {
+  color: hsl(220, 13%, 13%);
+}
 
 p.qua {
   border-radius: 8px;
@@ -333,20 +333,12 @@ aside .smal {
   .avatar:hover {
     outline: 2px solid orangered;
   }
-  button:hover{
+  button:hover,
+  .minus:hover,
+  .plus:hover,img:hover {
     cursor: pointer;
   }
-  /* .left:hover,
-  .right:hover,
-  .cart:hover,
-  .avatar:hover,
-  a:hover,
-  .minus:hover,
-  .plus:hover,
-  .addcart:hover,
-  .checkcart:hover {
-    cursor: pointer;
-  } */
+
   .checkcart:hover,
   .checkcart:active {
     filter: brightness(10%);
