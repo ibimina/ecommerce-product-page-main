@@ -55,67 +55,46 @@ Users should be able to:
 
 
 ### What I learned
-I used this function to control the display of image when the arrow button is clicked and 
-to override  the light box image
-
-
+I used this function to control the display of image when the arrow button is clicked 
 
 ```js
-function redo() {
-  lefty.addEventListener("click", function () {
-    if (curr === 0) {
-      curr = changeImage.length;
-      lide();
-    }
-
-    leftSlidee();
-    inlefty.innerHTML = "";
-  });
-}
-
-redo();
-
-function redoi() {
-  rigty.addEventListener("click", function () {
-    if (curr === changeImage.length - 1) {
-      curr = -1;
-         lide();
-    }
-    rightlide();
-    inlefty.innerHTML = "";
-  });
-}
-
-redoi();
-```
-
-I learnt on how to use the filter property to change the colour of a svg element wrapper in an image tag
-
-```css
-.checkoutcartimg {
-  cursor: pointer;
-  filter: invert(100%)sepia(20%)hue-rotate(80deg)saturate(100%)brightness(1000%);
-}
-
-.checkcart {
-  cursor: pointer;
-  filter: invert(100%)sepia(100%)hue-rotate(399deg)saturate(0)brightness(110%);
-}
-.checkcart:hover,.checkcart:active{
-  filter: brightness(10%);
+function leftSlide(image) {
+  reset(image);
+  if (current === 0) {
+    current = image.length;
+  }
+  image[current - 1].style.display = "block";
+  current--;
 }
 ```
+
+and 
+to override  the light box image
+```js
+btnContainer.addEventListener("click", (e) => {
+  let somw = e.target;
+  console.log(somw);
+  if (somw.classList.contains("thumbone")) {
+    largeImg.innerHTML = `<img src="images/image-product-1.jpg" alt="" />`;
+  } else if (somw.classList.contains("thumbtwo")) {
+    largeImg.innerHTML = `<img src="images/image-product-2.jpg" alt="" />`;
+  } else if (somw.classList.contains("thumbthree")) {
+    largeImg.innerHTML = `<img src="images/image-product-3.jpg" alt="" />`;
+  } else if (somw.classList.contains("thumbfour")) {
+    largeImg.innerHTML = `<img src="images/image-product-4.jpg" alt="" />`;
+  }
+});
+```
+
 
 ### Continued development
 Working on Mobile design web page and image slider
 
 
-
-
 ## Author
 
 - Ibimina Hart
-- Frontend Mentor - (https://www.frontendmentor.io/profile/ibimina)
-- Twitter - (https://www.twitter.com/ibiminaaH)
+- Frontend Mentor - [@ibimina](https://www.frontendmentor.io/profile/ibimina)
+- Twitter - [@ibiminaaH](https://www.twitter.com/ibiminaaH)
 
 
